@@ -3,16 +3,61 @@
 <head>
   <title>이것은 1이다</title>
   <meta charset="utf-8">
+  <style>
+  #grid {
+    display: grid;
+    grid-template-columns: 355px 2fr;
+    border-top: 1px solid gray;
+    margin-bottom: 50px;
+  }
+  body {
+    margin: 0px;
+  }
+  a {
+    color:green;
+  }
+  h1 {
+    display: block;
+    padding: 45px;
+    font-size: 30px;
+    text-align: center;
+    margin: 0px;
+    }
+  h2 {
+    padding: 20px;
+  }
+ #grid ol {
+    margin: 0px;
+    margin-left: 40px;
+    padding: 30px;
+    padding-left: 100px;
+  }
+  img {
+    display: block;
+    margin: 40px auto;
+  }
+  #grid #article {
+    text-align: center;
+    border-left: 1px solid gray;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-right: 150px;
+  }
+  </style>
 </head>
 <body>
-  <h1><a href="index.html">여긴 어디지?</a></h1>
-  <ol>
-    <li><a href="1.html">1번 항목엔 뭐가 있을까</a></li>
-    <li><a href="2.html">2번에는 새로운 기능이?</a></li>
-    <li><a href="3.html">아 이제 귀찮다</a></li>
-  </ol>
-  <h2>1번 항목엔 뭐가 있을까</h2>
-  <p>뜬금없이 네이버로 가는 길을 만들어 보겠습니다. <strong>얍!</strong><br>>><a href="https://www.naver.com" target="_blank" title="네이버로 간다">네이버로 가는 길</a><<<br>네이버는 우리나라의 남바완 검색엔진이죠. 저도 많이 애용하고 있습니다. 네이버페이 체크카드도 쓰고 있어요. <u>밑줄~</u></p>
-  <img src="google.jpg" width="100%">
-  <p style="margin-top:40px;">구글도 많이 써요. 정보의 바다를 헤엄치는 것은 너무 재밌어요. </p>
+  <h1><a href="index.html" style="text-decoration:none;">여긴 어디지?</a></h1>
+  <div id="grid">
+    <ol>
+      <li><a href="1.html">1번 항목엔 뭐가 있을까</a></li>
+      <li><a href="2.html">2번에는 새로운 기능이?</a></li>
+      <li><a href="3.html">아 이제 귀찮다</a></li>
+    </ol>
+    <div id="article">
+      <h2>1번 항목엔 뭐가 있을까</h2>
+      <p>뜬금없이 네이버로 가는 길을 만들어 보겠습니다. <strong>얍!</strong><br>>><a href="https://www.naver.com" target="_blank" title="네이버로 간다">네이버로 가는 길</a><<<br>네이버는 우리나라의 남바완 검색엔진이죠. 저도 많이 애용하고 있습니다. 네이버페이 체크카드도 쓰고 있어요. <u>밑줄~</u>
+      <img src="google.jpg" width="100%"></p>
+      <p>구글도 많이 써요. 정보의 바다를 헤엄치는 것은 너무 재밌어요. </p>
+    </div>
+  </div>
 </body>

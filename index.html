@@ -3,18 +3,66 @@
 <head>
   <title>여기는 홈이다</title>
   <meta charset="utf-8">
+  <style>
+  #grid {
+    display: grid;
+    grid-template-columns: 355px 2fr;
+    border-top: 1px solid gray;
+    margin-bottom: 50px;
+  }
+  body {
+    margin: 0px;
+  }
+  a {
+    color:green;
+  }
+  h1 {
+    display: block;
+    padding: 45px;
+    font-size: 30px;
+    text-align: center;
+    margin: 0px;
+    }
+  h2 {
+    padding: 20px;
+  }
+ #grid ol {
+    margin: 0px;
+    margin-left: 40px;
+    padding: 30px;
+    padding-left: 100px;
+  }
+  img {
+    display: block;
+    margin: 40px auto;
+  }
+  #grid #article {
+    text-align: center;
+    border-left: 1px solid gray;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-right: 150px;
+  }
+  </style>
 </head>
 <body>
-  <h1><a href="index.html">여긴 어디지?</a></h1>
-  <ol>
-    <li><a href="1.html">1번 항목엔 뭐가 있을까</a></li>
-    <li><a href="2.html">2번에는 새로운 기능이?</a></li>
-    <li><a href="3.html">아 이제 귀찮다</a></li>
-  </ol>
-  <h2>환영합니다</h2>
-  <p>저의 생애 첫 웹사이트입니다. <strong>야호!</strong> 이렇게 귀한 곳에 누추한 분이... 아니 누추한 곳에 귀한 분이 오셨네요. 아직 대접이 변변치 않아도 이해하세요. 왕대충 만들어 보는 중입니다. 아직 심혈을 기울이지 않았어요.</p>
-  <img src="thisisit.jpg" width="100%">
-  <p style="margin-top:40px;">이것은 두번째 단락입니다. 뭐라고 쓰지? 쓸 말이 생각이 안 나네요. 이렇게 할 말이 없다니. 어쨌든 두번째 단락이었습니다.</p>
+  <h1><a href="index.html" style="text-decoration:none;">여긴 어디지?</a></h1>
+  <div id="grid">
+    <ol>
+      <li><a href="1.html">1번 항목엔 뭐가 있을까</a></li>
+      <li><a href="2.html">2번에는 새로운 기능이?</a></li>
+      <li><a href="3.html">아 이제 귀찮다</a></li>
+    </ol>
+    <div id="article">
+      <h2>환영합니다</h2>
+      <p>저의 생애 첫 웹사이트입니다. <strong>야호!</strong><br> 이렇게 귀한 곳에 누추한 분이... 아니 누추한 곳에 귀한 분이 오셨네요.<br> 아직 대접이 변변치 않아도 이해하세요. 왕대충 만들어 보는 중입니다. 아직 심혈을 기울이지 않았어요.
+      <img src="thisisit.jpg" width="100%">
+      </p>
+      <p>이것은 두번째 단락입니다. 뭐라고 쓰지? 쓸 말이 생각이 안 나네요. 이렇게 할 말이 없다니. 어쨌든 두번째 단락이었습니다.
+      </p>
+    </div>
+  </div>
+
   <p><div id="disqus_thread"></div>
 <script>
     /**
