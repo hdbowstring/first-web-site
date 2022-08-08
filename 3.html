@@ -43,6 +43,9 @@
     padding-right: 50px;
     margin-right: 150px;
   }
+  #disqus_thread {
+    margin: 100px;
+  }
   </style>
 </head>
 <body>
@@ -52,10 +55,32 @@
       <li><a href="1.html">1번 항목엔 뭐가 있을까</a></li>
       <li><a href="2.html">2번에는 새로운 기능이?</a></li>
       <li><a href="3.html">아 이제 귀찮다</a></li>
-    </ol>
+      <li><a href="4.html">어디로 갈까</a></li>
+      <li><a href="5.html">랜덤이미지</a></li>
+      <li><a href="6.html">벌써 6번</a></li>
+  </ol>
     <div id="article">
   <h2>슬슬 따분해지고 있어</h2>
   <p>어쨌든 제 첫 홈페이지를 봐주셔서 감사합니다. 다음엔 더 풍성하게 모시겠습니다. 그럼 안녕~<br><a href="https://www.youtube.com/watch?v=0n2ItsCmLtw" target="_blank" title="바이바이">뿅</a></p>
     </div>
   </div>
+  <div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://shfirstweb.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </body>
