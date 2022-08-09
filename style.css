@@ -1,0 +1,52 @@
+body {
+  margin: 0px;
+}
+a {
+  color:green;
+}
+h1 {
+  display: block;
+  padding: 45px;
+  font-size: 30px;
+  text-align: center;
+  margin: 0px;
+}
+h2 {
+  padding: 20px;
+}
+img {
+  display: block;
+  margin: 40px auto;
+}
+#grid {
+  display: grid;
+  grid-template-columns: 290px 2fr;
+  border-top: 1px solid gray;
+  margin-bottom: 50px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+#grid ol {
+  margin: 0px;
+  padding: 30px;
+  padding-left: 60px;
+}
+#grid #article {
+  text-align: center;
+  border-left: 1px solid gray;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+#disqus_thread {
+  margin: 100px;
+}
+@media(max-width:900px) {
+  #grid{
+    display: block;
+  }
+  #grid #article{
+    margin: 0px;
+    border-top: 1px solid gray;
+    border-left: none;
+  }
+}
