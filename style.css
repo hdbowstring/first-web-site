@@ -40,7 +40,7 @@ img {
 #disqus_thread {
   margin: 100px;
 }
-@media(max-width:900px) {
+@media(max-width:1199px) {
   #grid{
     display: block;
   }
