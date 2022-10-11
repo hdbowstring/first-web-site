@@ -3,6 +3,8 @@
 <head>
   <title>이것은 2이다</title>
   <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="color.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,6 +17,9 @@
       <li><a href="4.html">어디로 갈까</a></li>
       <li><a href="5.html">랜덤이미지</a></li>
       <li><a href="6.html">벌써 6번</a></li>
+      <input id="night_day" type="button" value="night" onclick="
+        nightDayHandler(this);
+      ">
     </ol>
     <div id="article">
       <h2>없어요</h2>

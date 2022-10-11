@@ -3,10 +3,13 @@
 <head>
   <title>여기는 홈이다</title>
   <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="color.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1><a href="index.html" style="text-decoration:none;">여긴 어디지?</a></h1>
+
   <div id="grid">
     <ol>
       <li><a href="1.html">1번 항목엔 뭐가 있을까</a></li>
@@ -15,6 +18,9 @@
       <li><a href="4.html">어디로 갈까</a></li>
       <li><a href="5.html">랜덤이미지</a></li>
       <li><a href="6.html">벌써 6번</a></li>
+      <input id="night_day" type="button" value="night" onclick="
+        nightDayHandler(this);
+      ">
     </ol>
     <div id="article">
       <h2>환영합니다</h2>
